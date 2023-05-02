@@ -1,0 +1,65 @@
+@font-face {
+    font-family: Inter;
+    src: url('/fonts/Inter.ttf');
+}
+
+:root {
+    --background1: #FFFFFF;
+    --background2: #F6F6F6;
+    --main: #000000;
+    --secondary: #505050;
+    --secondary2: #BDBDBD;
+    --accent: #FF9F0A;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    /* margin-top: -20px; */
+
+    font-family: Inter, Arial, sans-serif;
+    color: var(--main);
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.link {
+    color: #64D2FF;
+    text-decoration: underline;
+}
+
+.small-text-bold {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.small-text {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+em {
+    font-style: normal;
+    color: var(--accent);
+}
+
+.chapters-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Exercise */
+
+.exercise-img-container {
+    margin: 10px;
+}
+
+.exercise-img {
+    width: 100%;
+    outline: 2px solid black;
+    /* margin-right: 20px; */
+    /* margin: 10px; */
+}

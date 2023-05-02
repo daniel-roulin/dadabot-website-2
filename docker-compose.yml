@@ -1,0 +1,15 @@
+services:
+  website:
+    image: website
+    build: website
+    volumes:
+      - ${VOLUME_PATH}/database:/app/database
+    restart: always
+  proxy:
+    image: proxy
+    build: proxy
+    volumes:
+      - ${VOLUME_PATH}/static:/dadabot-data/static
+    ports:
+      - 80:80
+    restart: always
