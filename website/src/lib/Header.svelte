@@ -14,7 +14,7 @@
             </button>
         </div>
         <a href="/">
-            <img class="logo" alt="Dadabot logo" src="/images/logo.webp">
+            <img class="logo" alt="Dadabot logo" src="/logo.png">
         </a>        
     </div>
     <hr class="divider">
