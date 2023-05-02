@@ -11,5 +11,5 @@ services:
     volumes:
       - ${VOLUME_PATH}/static:/dadabot-data/static
     ports:
-      - 80:80
+      - 8080:80
     restart: always
