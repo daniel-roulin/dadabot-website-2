@@ -55,7 +55,9 @@ with open(f"index.json", 'r') as f:
     index = dict(sorted(index.items(), key=lambda s: int(s[0])))
 
 # generate_images()
+generate_image(30, 20, "out.png", index, PDFS_PATH, ".")
 
-connection = setup_database()
-populate_chapters(connection, CHAPTER_NAMES_PATH)
-populate_exercises(connection, index, ANSWERS_PATH)
+
+# connection = setup_database()
+# populate_chapters(connection, CHAPTER_NAMES_PATH)
+# populate_exercises(connection, index, ANSWERS_PATH)

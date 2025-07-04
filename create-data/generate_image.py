@@ -45,7 +45,7 @@ def find_ex_rect(page, exercise, exercise_page_num, chapter, pdf):
     return rects[0]
 
 
-@segfault_guard
+# @segfault_guard
 def generate_image(chapter_int, exercise_int, dest_path, index, chapters_path, temp_dir):
     """Takes a chapter and exercise number and return a PIL image of the exercise"""
 
@@ -92,9 +92,9 @@ def generate_image(chapter_int, exercise_int, dest_path, index, chapters_path, t
 
     output.save(os.path.join(temp_dir, "temp.pdf"), deflate=True, garbage=3)
 
-    pdfCropMargins.crop([os.path.join(temp_dir, "temp.pdf"), "-o", os.path.join(temp_dir, "cropped.pdf")])
+    # pdfCropMargins.crop([os.path.join(temp_dir, "temp.pdf"), "-o", os.path.join(temp_dir, "cropped.pdf")])
 
     # print(f"Generated image for exercise {exercise} in chapter {chapter}")
 
-    image = pdf2image.convert_from_path(os.path.join(temp_dir, "cropped.pdf"))[0]
+    image = pdf2image.convert_from_path(os.path.join(temp_dir, "temp.pdf"), dpi=300, use_cropbox=True)[0]
     image.save(dest_path)
