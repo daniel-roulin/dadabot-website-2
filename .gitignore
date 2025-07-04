@@ -1,19 +1,9 @@
-discord-bot
-
 .vscode
 **.md
 **.sh
 
 create-data/__pycache__/
-create-data/index.json
 
-dadabot-data/database
-dadabot-data/static/answers
-dadabot-data/static/pdfs/chapter*.pdf
-
-proxy/dev.conf
-
-website/.DS_Store
 website/node_modules
 website/build
 website/.svelte-kit
