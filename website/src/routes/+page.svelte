@@ -23,6 +23,6 @@
     <meta name="twitter:description" content="Dadabot: Never do your physics homework again!">
 </svelte:head>
 
-<Chapters subtitle="Recent" chapters={recent_chapters} />
-<Chapters subtitle="Trending" chapters={trending_chapters} />
+<!-- <Chapters subtitle="Recent" chapters={recent_chapters} />
+<Chapters subtitle="Trending" chapters={trending_chapters} /> -->
 <Chapters subtitle="All" chapters={all_chapters} />

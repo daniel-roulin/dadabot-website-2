@@ -23,6 +23,6 @@
     <meta name="twitter:description" content="Exercises of chapter {data.chapter}">
 </svelte:head>
 
-<Exercises subtitle="Recent" exercises={recent_exercises}/>
-<Exercises subtitle="Trending" exercises={trending_exercises}/>
+<!-- <Exercises subtitle="Recent" exercises={recent_exercises}/>
+<Exercises subtitle="Trending" exercises={trending_exercises}/> -->
 <Exercises subtitle="All" exercises={all_exercises}/>
