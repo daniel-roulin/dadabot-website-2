@@ -1,6 +1,7 @@
 .vscode
-**.md
-**.sh
+
+dadabot-data/database/database.db-shm
+dadabot-data/database/database.db-wal
 
 create-data/__pycache__/
 
